@@ -63,8 +63,8 @@ body {
     }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  background-color: #1d2867;
+  color: #868224;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%; 
@@ -72,7 +72,7 @@ body {
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: #31a00f;
 }
 
 .sidebar2 {
