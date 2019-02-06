@@ -100,7 +100,7 @@ body {
     /*Conteneur flex en rangée*/
     display: flex;
     /*Poussée vers la gauche pour ne pas voir le menu*/
-    transform: translateX(-100%);
+    transform: translateX(-109%);
     /*Effet de transition sur la transformation*/
     transition: transform 1s;
 /*	overflow-x: hidden; */
@@ -149,7 +149,7 @@ li {
     background-color: #E84545;
     text-align: center;
     /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-    width: 100vw;
+    width: 90vw;
     /*Propriété comme item flex - ne peut rétrécir*/
     flex: 1 0 100%;
     /*Contexte flex en colonne pour ses enfants*/
@@ -202,7 +202,7 @@ li {
             
     .global {
         /*Placer à sa potition d'origine*/
-        transform: translateX(0%);
+        transform: translateX(-0%);
         /*Mettre le contenu en colonne*/				
         flex-direction: column;
     }

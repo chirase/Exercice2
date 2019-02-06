@@ -189,8 +189,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   /*Poussée vers la gauche pour ne pas voir le menu*/
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-109%);
+          transform: translateX(-109%);
   /*Effet de transition sur la transformation*/
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -256,7 +256,7 @@ li {
   background-color: #E84545;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-  width: 100vw;
+  width: 90vw;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
