@@ -6,6 +6,21 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
+    <input type="checkbox" id="chkBoutonBurger" />
+    <label for="chkBoutonBurger" class="boutonBurger"></label>
+  
+    <div class="global">
+      <nav class="menu">
+        <a href="#">BOUTON 1</a>
+        <a href="#">BOUTON 2</a>
+        <a href="#">BOUTON 3</a>
+        <a href="#">BOUTON 4</a>
+      </nav>
+      <!-- /MENU -->
+
+
+
     <div class="wrapper">
   <div class="box header">Header</div>
   <div class="box sidebar">Sidebar</div>
@@ -14,5 +29,25 @@
     <br /> More content than we had before so this column is now quite tall.</div>
   <div class="box footer">Footer</div>
 </div>
+<script>
+		/*
+		Contrôler l'aspect de la case à cocher au clic sur les boutons
+		*/
+		
+		(function() { //IIFE
+			var leCheckBox = document.querySelector("input");
+			var lesBoutons = document.querySelectorAll(".menu a");
+			var nbBoutons = lesBoutons.length;		
+			console.log(nbBoutons);
+			
+			for (var i = 0; i < nbBoutons; i++) {
+				lesBoutons[i].addEventListener("click", function() {
+					console.log(leCheckBox.checked);
+					leCheckBox.checked = false;
+				}, false);
+			}
+		})(); //Fin IIFE
+	</script>
 </body>
+
 </html>
