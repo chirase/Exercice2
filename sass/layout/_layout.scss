@@ -35,7 +35,7 @@ body {
        "footer"
     }
   
-      @media only screen and (min-width: 500px)  {
+      @media only screen and (min-width: $query__mini)  {
       .wrapper {
   
           grid-template-columns: 20% auto;
@@ -47,7 +47,7 @@ body {
       }
       }
   
-      @media only screen and (min-width: 600px)   {
+      @media only screen and (min-width: $query__small)   {
           .wrapper {
         grid-gap: 25px;
               grid-template-columns: 30vw auto 30vw;
@@ -191,7 +191,7 @@ li {
 }
 /*Pour les tailles plus grandes le menu apparaît de hauteur normale et le bouton burger disparaît*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $query__large) {
     html {
         font-size: 1em;
     }
